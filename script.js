@@ -5,8 +5,7 @@ function updateTime() {
 	const date = now.toLocaleDateString();
 	const time = now.toLocaleTimeString();
 
-	const updateDisplay = document.getElementById("time");
-	updateDisplay.textContent = date + ", " + time;
+	const updateDisplay = document.getElementById("time").textContent = date + ", " + time;
 }
 
 setInterval(updateTime, 1000);
